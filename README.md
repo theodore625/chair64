@@ -1,6 +1,6 @@
 # Chair64 Compiler
 
-**Version:** Alpha 1.947207
+**Version:** 1.9-Alpha
 
 ## About
 
