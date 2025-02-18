@@ -12,7 +12,7 @@
             color: #333;
             padding: 50px;
         }
-        h1, h2 {
+        h1, h2, h3 {
             font-size: 2.5em;
         }
         p {
@@ -33,14 +33,48 @@
             margin: 0 auto;
             max-width: 800px;
         }
+        .nav-links {
+            margin-bottom: 30px;
+        }
+        .nav-links a {
+            margin: 10px;
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+        .nav-links a:hover {
+            color: #007bff;
+        }
     </style>
 </head>
 <body>
+    <!-- Navigation Links -->
+    <div class="nav-links">
+        <a href="#overview">Overview</a>
+        <a href="#download">Download</a>
+        <a href="#functions">Functions</a>
+    </div>
+
     <!-- Logo -->
     <img src="output.png" alt="Chair64 Logo" class="logo">
     <h1>Welcome to Chair64</h1>
     <p>Chair64 is a new programming platform that runs `.c64s` files.</p>
     <p>Explore our features and get started with Chair64 today!</p>
+
+    <!-- Overview Section -->
+    <div class="section" id="overview">
+        <h2>Overview</h2>
+        <p>Chair64 is a virtual platform that runs `.c64s` files. It's designed to be simple yet powerful, allowing you to easily run and test code in a variety of environments.</p>
+        <p>Whether you're working on your first script or developing complex applications, Chair64 is here to help you get things done quickly and efficiently.</p>
+    </div>
+
+    <!-- Download Section -->
+    <div class="section" id="download">
+        <h2>Download</h2>
+        <p>You can download the latest version of Chair64 below:</p>
+        <p><a href="https://github.com/theodore625/chair64/releases/latest" target="_blank">Download Chair64</a></p>
+        <p>Follow the instructions in the README to get started quickly.</p>
+    </div>
 
     <!-- Functions Section -->
     <div class="section" id="functions">
@@ -58,5 +92,6 @@
             <p>If there are any other functions you've implemented in Chair64, list them here.</p>
         </div>
     </div>
+
 </body>
 </html>
