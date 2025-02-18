@@ -1,1 +1,2 @@
-# chair64
+# chair64 compiler
+# Alpha
