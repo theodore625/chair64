@@ -3,123 +3,165 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chair64 - A New Era of Computing</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Chair64 - Official Documentation</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            text-align: center;
+            line-height: 1.6;
             background-color: #f4f4f4;
-            color: #333;
-            padding: 50px;
+            margin: 0;
+            padding: 0;
         }
-        h1, h2, h3 {
-            font-size: 2.5em;
+        header {
+            background: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
         }
-        p {
-            font-size: 1.2em;
+        header h1 {
+            margin: 0;
         }
-        .logo {
-            width: 150px;
-            margin: 20px 0;
+        nav ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
         }
-        .section {
-            margin-top: 40px;
-            padding: 20px;
-            background-color: #e0e0e0;
-            border-radius: 8px;
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
         }
-        .function-list {
-            text-align: left;
-            margin: 0 auto;
-            max-width: 800px;
-        }
-        .nav-links {
-            margin-bottom: 30px;
-        }
-        .nav-links a {
-            margin: 10px;
+        nav ul li a {
+            color: #fff;
             text-decoration: none;
-            color: #333;
-            font-weight: bold;
         }
-        .nav-links a:hover {
-            color: #007bff;
+        section {
+            padding: 20px;
+            margin: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #333;
+        }
+        code {
+            background-color: #eee;
+            padding: 5px;
+            border-radius: 3px;
+        }
+        pre {
+            background-color: #eee;
+            padding: 10px;
+            border-radius: 5px;
+            overflow: auto;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #333;
+            color: #fff;
+            margin-top: 20px;
+        }
+        a {
+            text-decoration: none;
+            color: #007BFF;
         }
     </style>
 </head>
 <body>
-    <!-- Navigation Links -->
-    <div class="nav-links">
-        <a href="#overview">Overview</a>
-        <a href="#download">Download</a>
-        <a href="#functions">Functions</a>
-    </div>
 
-    <!-- Logo -->
-    <img src="output.png" alt="Chair64 Logo" class="logo">
+<header>
     <h1>Welcome to Chair64</h1>
-    <p>Chair64 is a new programming platform that runs `.c64s` files.</p>
-    <p>Explore our features and get started with Chair64 today!</p>
+    <nav>
+        <ul>
+            <li><a href="#overview">Overview</a></li>
+            <li><a href="#download">Download</a></li>
+            <li><a href="#functions">Functions</a></li>
+            <li><a href="#help">Help</a></li>
+        </ul>
+    </nav>
+</header>
 
-    <!-- Overview Section -->
-    <div class="section" id="overview">
-        <h2>Overview</h2>
-        <p>Chair64 is a virtual platform that runs `.c64s` files. It's designed to be simple yet powerful, allowing you to easily run and test code in a variety of environments.</p>
-        <p>Whether you're working on your first script or developing complex applications, Chair64 is here to help you get things done quickly and efficiently.</p>
-    </div>
-
-    <!-- Download Section -->
-    <div class="section" id="download">
-        <h2>Download</h2>
-        <p>You can download the latest version of Chair64 below:</p>
-        <p><a href="https://github.com/theodore625/chair64/releases/latest" target="_blank">Download Chair64</a></p>
-        <p>Follow the instructions in the README to get started quickly.</p>
-    </div>
-
-    <!-- Functions Section -->
-    <section id="functions">
-  <h2>Functions</h2>
-  <p>Here are the functions available in Chair64:</p>
-
-  <h3>log()</h3>
-  <p>The <code>log()</code> function logs various types of data to the console. You can log text, numbers, booleans, random booleans, or lottery results. Here are some examples:</p>
-  <ul>
-    <li><code>log('Hello, world!')</code> - Logs a string message.</li>
-    <li><code>log(123)</code> - Logs a number.</li>
-    <li><code>log(True)</code> - Logs a boolean value (True).</li>
-    <li><code>log(False)</code> - Logs a boolean value (False).</li>
-    <li><code>log(randomboolean)</code> - Logs a random boolean value (True or False).</li>
-    <li><code>log(lottery)</code> - Logs the result of a lottery (Win or Lose).</li>
-    <li><code>log('Hello, ' "World!")</code> - Logs joined strings and variables.</li>
-  </ul>
-
-  <h3>randomboolean</h3>
-  <p>The <code>randomboolean</code> function returns either <code>True</code> or <code>False</code> randomly. Example:</p>
-  <ul>
-    <li><code>randomboolean</code> - Returns a random boolean value (True or False).</li>
-  </ul>
-
-  <h3>lottery</h3>
-  <p>The <code>lottery</code> function returns a random outcome of either "Win" or "Lose." Example:</p>
-  <ul>
-    <li><code>lottery</code> - Returns a random lottery result ("Win" or "Lose").</li>
-  </ul>
-
-  <h3>void()</h3>
-  <p>The <code>void()</code> function can be used as a placeholder or to check for process finalization. It doesn't do anything but can be useful in certain scenarios:</p>
-  <ul>
-    <li><code>void(0)</code> - Does nothing, useful for placeholders.</li>
-    <li><code>void(1)</code> - Checks if the process is finalizing and returns a boolean.</li>
-    <li><code>void(0.0)</code> - Used for cleanup or finalization.</li>
-  </ul>
-
-  <h3>help</h3>
-  <p>The <code>help</code> function displays a list of available commands and their usage. It can be used at any time to see what commands are available:</p>
-  <ul>
-    <li><code>help</code> - Displays the help menu with available commands.</li>
-  </ul>
+<section id="overview">
+    <h2>Overview</h2>
+    <p>Chair64 is a powerful programming language and environment built with simplicity and flexibility in mind. It enables users to write scripts in a custom, Python-like syntax. Whether you're creating a mini-project or developing a robust script, Chair64 provides the tools you need to get started quickly.</p>
+    <h3>Features</h3>
+    <ul>
+        <li>Support for logging various data types (strings, numbers, booleans, random values, lottery results)</li>
+        <li>Interactive mode with real-time feedback</li>
+        <li>File execution for .c64s scripts</li>
+        <li>Built-in functions for random boolean generation and lottery results</li>
+    </ul>
 </section>
 
+<section id="download">
+    <h2>Download Chair64</h2>
+    <p>To start using Chair64, download the latest version below:</p>
+    <ul>
+        <li><a href="https://github.com/theodore625/chair64/releases" target="_blank">Download Chair64</a></li>
+    </ul>
+</section>
+
+<section id="functions">
+    <h2>Functions</h2>
+    <p>Here are the functions available in Chair64:</p>
+
+    <h3>log()</h3>
+    <p>The <code>log()</code> function logs various types of data to the console. You can log text, numbers, booleans, random booleans, or lottery results. Here are some examples:</p>
+    <ul>
+        <li><code>log('Hello, world!')</code> - Logs a string message.</li>
+        <li><code>log(123)</code> - Logs a number.</li>
+        <li><code>log(True)</code> - Logs a boolean value (True).</li>
+        <li><code>log(False)</code> - Logs a boolean value (False).</li>
+        <li><code>log(randomboolean)</code> - Logs a random boolean value (True or False).</li>
+        <li><code>log(lottery)</code> - Logs the result of a lottery (Win or Lose).</li>
+        <li><code>log('Hello, ' "World!")</code> - Logs joined strings and variables.</li>
+    </ul>
+
+    <h3>randomboolean</h3>
+    <p>The <code>randomboolean</code> function returns either <code>True</code> or <code>False</code> randomly. Example:</p>
+    <ul>
+        <li><code>randomboolean</code> - Returns a random boolean value (True or False).</li>
+    </ul>
+
+    <h3>lottery</h3>
+    <p>The <code>lottery</code> function returns a random outcome of either "Win" or "Lose." Example:</p>
+    <ul>
+        <li><code>lottery</code> - Returns a random lottery result ("Win" or "Lose").</li>
+    </ul>
+
+    <h3>void()</h3>
+    <p>The <code>void()</code> function can be used as a placeholder or to check for process finalization. It doesn't do anything but can be useful in certain scenarios:</p>
+    <ul>
+        <li><code>void(0)</code> - Does nothing, useful for placeholders.</li>
+        <li><code>void(1)</code> - Checks if the process is finalizing and returns a boolean.</li>
+        <li><code>void(0.0)</code> - Used for cleanup or finalization.</li>
+    </ul>
+
+    <h3>help</h3>
+    <p>The <code>help</code> function displays a list of available commands and their usage. It can be used at any time to see what commands are available:</p>
+    <ul>
+        <li><code>help</code> - Displays the help menu with available commands.</li>
+    </ul>
+</section>
+
+<section id="help">
+    <h2>Help</h2>
+    <p>If you're new to Chair64 or need a refresher, use the <code>help</code> command in the interactive mode to see a list of available commands. You can also check the syntax of each function and its usage examples.</p>
+    <h3>Common Commands</h3>
+    <ul>
+        <li><code>log()</code> - Used to log different types of data to the console (string, number, boolean, etc.).</li>
+        <li><code>randomboolean</code> - Generates a random boolean value (True or False).</li>
+        <li><code>lottery</code> - Generates a random outcome, either "Win" or "Lose."</li>
+        <li><code>void()</code> - A placeholder or finalization checker function.</li>
+        <li><code>help</code> - Displays the list of available commands.</li>
+    </ul>
+</section>
+
+<footer>
+    <p>&copy; 2025 Chair64. All rights reserved.</p>
+</footer>
 
 </body>
 </html>
